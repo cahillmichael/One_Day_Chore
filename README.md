@@ -1,5 +1,5 @@
 # Work Day Scheduler
-This application allows users to populate text fields for each hour of the work day. Text is save to local storage and available on reload. The time blocks change color to indicate whether they are past, present, or future.
+This application allows users to populate text fields for each hour of the work day. Text is saved to local storage and available on reload. The time blocks change color to indicate whether they are past, present, or future.
 
 ## User Story
 ```
