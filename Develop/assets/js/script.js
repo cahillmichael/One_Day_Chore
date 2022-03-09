@@ -8,12 +8,11 @@ for(let i = 9; i < 18; i++) {
     }
     else if(moment().hour() < i){
         $("#" + i).addClass("future");
-
     }
     else if(moment().hour() > i){
         $("#" + i).addClass("past");
     }
-}
+};
 
 //save text
 $(".saveBtn").on("click", function(){
@@ -21,3 +20,8 @@ $(".saveBtn").on("click", function(){
     var taskText = $("#" + hourRow).val();
     localStorage.setItem(hourRow, taskText);
 });
+
+//load text
+for(let i = 9; i < 18; i++) {
+    $("#" + i).val(localStorage.getItem(i));
+};
