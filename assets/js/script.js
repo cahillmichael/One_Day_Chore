@@ -1,5 +1,5 @@
 //display current date, assign by id
-$("#currentDay").text();
+$("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 //color textarea based on time
 //iterate from 9 to 17 (hours in work day)
