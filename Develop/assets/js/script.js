@@ -5,7 +5,6 @@ $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
 //color textarea based on time
 for(let i = 9; i < 18; i++) {
-    console.log(moment().hour())
     if(moment().hour() === i){
         $("#" + i).addClass("present");
     }
@@ -17,3 +16,10 @@ for(let i = 9; i < 18; i++) {
         $("#" + i).addClass("past");
     }
 }
+
+//save text
+$(".saveBtn").on("click", function(){
+    console.log("click");
+    var hourRow = $(this).closest(".row").find("textarea").attr("id");
+
+});
