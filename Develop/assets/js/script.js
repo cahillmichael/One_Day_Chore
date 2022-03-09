@@ -1,5 +1,3 @@
-
-
 //display current date
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
@@ -19,7 +17,7 @@ for(let i = 9; i < 18; i++) {
 
 //save text
 $(".saveBtn").on("click", function(){
-    console.log("click");
     var hourRow = $(this).closest(".row").find("textarea").attr("id");
-
+    var taskText = $("#" + hourRow).val();
+    localStorage.setItem(hourRow, taskText);
 });
